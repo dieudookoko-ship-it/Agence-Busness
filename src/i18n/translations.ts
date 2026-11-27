@@ -93,6 +93,25 @@ export interface TranslationContent {
       desc: string;
     }[];
   };
+  gallery: {
+    kicker: string;
+    title: string;
+    subtitle: string;
+    zoomLabel: string;
+    closeLabel: string;
+    items: Record<
+      'm1' | 'm2' | 'm3' | 'm4' | 'm5' | 'm6',
+      {
+        title: string;
+        caption: string;
+      }
+    >;
+    airBanner: {
+      badge: string;
+      title: string;
+      caption: string;
+    };
+  };
   tracking: {
     kicker: string;
     title: string;
@@ -360,6 +379,46 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
           desc: 'Prise en charge directe de vos demandes de cotation par téléphone, email et WhatsApp.',
         },
       ],
+    },
+    gallery: {
+      kicker: 'Opérations sur le terrain',
+      title: 'Nos expéditions en images.',
+      subtitle:
+        'Aperçu réel de la réception en entrepôt à Guangzhou, du conditionnement sécurisé des colis et du chargement en conteneurs vers la RDC.',
+      zoomLabel: 'Agrandir la photo',
+      closeLabel: 'Fermer',
+      items: {
+        m2: {
+          title: 'Entrepôt & manutention',
+          caption: 'Réception, palettisation et préparation des cartons d’exportation par chariot élévateur.',
+        },
+        m5: {
+          title: 'Marquage & cerclage export',
+          caption: 'Colis identifiés, filmés et renforcés par cerclage avant la mise en conteneur.',
+        },
+        m4: {
+          title: 'Groupage & arrimage sécurisé',
+          caption: 'Optimisation du chargement et protection des marchandises emballées en soute.',
+        },
+        m3: {
+          title: 'Chargement & contrôle conteneur',
+          caption: 'Vérification et fermeture des conteneurs maritimes avant expédition internationale.',
+        },
+        m1: {
+          title: 'Conteneur maritime 40 pieds',
+          caption: 'Unité conteneurisée prête pour l’acheminement maritime vers l’Afrique Centrale.',
+        },
+        m6: {
+          title: 'Acheminement par semi-remorque',
+          caption: 'Transport routier des conteneurs entre zones portuaires et corridors logistiques.',
+        },
+      },
+      airBanner: {
+        badge: '07 · Fret Aérien International',
+        title: 'Liaisons aériennes Chine – Afrique Centrale (Ethiopian Airlines · Kenya Airways)',
+        caption:
+          'Acheminement rapide de vos colis commerciaux et cargaisons urgentes entre Guangzhou, Kinshasa et Lubumbashi via les principales compagnies desservant le corridor Afrique – Chine.',
+      },
     },
     tracking: {
       kicker: 'Suivi des marchandises',
@@ -637,6 +696,46 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
         },
       ],
     },
+    gallery: {
+      kicker: 'Field Operations',
+      title: 'Our cargo handling in action.',
+      subtitle:
+        'Real-world view of warehouse receiving in Guangzhou, reinforced export packaging, and container loading bound for DRC.',
+      zoomLabel: 'Enlarge photo',
+      closeLabel: 'Close',
+      items: {
+        m2: {
+          title: 'Warehouse & Forklift Handling',
+          caption: 'Receiving, stacking, and preparing export cartons inside our warehouse hub.',
+        },
+        m5: {
+          title: 'Export Marking & Strapping',
+          caption: 'Parcels labeled, wrapped, and secured with reinforced strapping prior to loading.',
+        },
+        m4: {
+          title: 'Consolidated Cargo Stowage',
+          caption: 'Protected LCL consolidation and tight stowage of wrapped commercial bales.',
+        },
+        m3: {
+          title: 'Container Loading & Inspection',
+          caption: 'Final loading check and door sealing of maritime containers before dispatch.',
+        },
+        m1: {
+          title: '40ft Maritime Container',
+          caption: 'High-cube shipping container staged for international ocean transit.',
+        },
+        m6: {
+          title: 'Heavy Chassis Road Dispatch',
+          caption: 'Containerized trailer transport linking port terminals and regional corridors.',
+        },
+      },
+      airBanner: {
+        badge: '07 · International Air Freight',
+        title: 'China – Central Africa Air Connections (Ethiopian Airlines · Kenya Airways)',
+        caption:
+          'Fast air cargo routing for commercial parcels and urgent shipments connecting Guangzhou, Kinshasa, and Lubumbashi via major China–Africa carriers.',
+      },
+    },
     tracking: {
       kicker: 'Cargo Tracking',
       title: 'Know where your shipment stands.',
@@ -901,6 +1000,45 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
           desc: '支持电话、邮件及 WhatsApp 快速报价，并提供结构化货物节点查询。',
         },
       ],
+    },
+    gallery: {
+      kicker: '现场实拍',
+      title: '实地装卸与集装箱作业。',
+      subtitle: '真实呈现广州仓库收货验货、货物加固打包以及发往刚果（金）的集装箱装柜全过程。',
+      zoomLabel: '查看大图',
+      closeLabel: '关闭',
+      items: {
+        m2: {
+          title: '仓库收货与叉车作业',
+          caption: '出口纸箱在仓库内的清点、码垛与叉车装卸准备。',
+        },
+        m5: {
+          title: '货物唛头标记与打包',
+          caption: '包裹贴标核对并用蓝色打包带缠膜加固，确保长途运输安全。',
+        },
+        m4: {
+          title: '拼箱集货与安全码放',
+          caption: '包装完好的商业货物紧凑装柜，充分利用集装箱空间。',
+        },
+        m3: {
+          title: '集装箱装柜与铅封核验',
+          caption: '海运集装箱装货完毕后的箱门核查与封箱作业。',
+        },
+        m1: {
+          title: '40尺高柜海运集装箱',
+          caption: '已完成配载并准备发往中非航线的标准海运集装箱。',
+        },
+        m6: {
+          title: '重型拖车陆运集疏',
+          caption: '连接港口码头与内陆物流走廊的集装箱半挂车运输。',
+        },
+      },
+      airBanner: {
+        badge: '07 · 国际航空货运',
+        title: '中非国际空运航线（埃塞俄比亚航空 · 肯尼亚航空）',
+        caption:
+          '依托主力中非航空运力，提供广州至金沙萨及卢本巴希的商业包裹与高时效货物快速空运服务。',
+      },
     },
     tracking: {
       kicker: '货物追踪',

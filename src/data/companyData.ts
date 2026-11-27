@@ -14,6 +14,20 @@ export const BRAND_INFO = {
   operationalImage: '/src/assets/images/operational_freight_port_1795340469944.jpg',
 };
 
+export const FIELD_GALLERY_IMAGES = [
+  { id: 'm2', src: '/assets/aistudio/M2_a62f7b53.png' },
+  { id: 'm5', src: '/assets/aistudio/M5_187aade7.png' },
+  { id: 'm4', src: '/assets/aistudio/M4_f629d7d7.png' },
+  { id: 'm3', src: '/src/assets/images/oloms_container_yard_1795792135057.jpg' },
+  { id: 'm1', src: '/src/assets/images/oloms_container_chassis_1795792136169.jpg' },
+  { id: 'm6', src: '/src/assets/images/oloms_semi_trailer_1795792135555.jpg' },
+] as const;
+
+export const AIR_CORRIDOR_BANNER = {
+  id: 'air_banner',
+  src: '/assets/aistudio/M6_f48d1f5d.png',
+} as const;
+
 export const OFFICE_LOCATIONS: OfficeContact[] = [
   {
     id: 'kinshasa',

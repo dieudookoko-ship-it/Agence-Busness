@@ -6,6 +6,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { ChinaDrcCorridorSection } from './components/ChinaDrcCorridorSection';
 import { AboutOperationsSection } from './components/AboutOperationsSection';
 import { WhyUsSection } from './components/WhyUsSection';
+import { OperationsGallerySection } from './components/OperationsGallerySection';
 import { TrackingSection } from './components/TrackingSection';
 import { QuoteSection } from './components/QuoteSection';
 import { ContactSection } from './components/ContactSection';
@@ -24,6 +25,7 @@ export default function App() {
           <ChinaDrcCorridorSection />
           <AboutOperationsSection />
           <WhyUsSection />
+          <OperationsGallerySection />
           <TrackingSection />
           <QuoteSection />
           <ContactSection />
