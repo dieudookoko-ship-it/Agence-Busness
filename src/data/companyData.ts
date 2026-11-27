@@ -8,10 +8,10 @@ export const BRAND_INFO = {
   servicesImages: {
     sea: '/src/assets/images/service_ocean_freight_1795340470171.jpg',
     air: '/src/assets/images/service_air_freight_1795340469907.jpg',
-    road: '/src/assets/images/service_ground_corridor_1795340470069.jpg',
-    warehouse: '/src/assets/images/service_warehouse_customs_1795340469805.jpg',
+    road: '/src/assets/images/oloms_highway_truck_1795792519591.jpg',
+    warehouse: '/src/assets/images/oloms_warehouse_floor_1795792521381.jpg',
   },
-  operationalImage: '/src/assets/images/operational_freight_port_1795340469944.jpg',
+  operationalImage: '/src/assets/images/oloms_port_trailer_1795792521542.jpg',
 };
 
 export const FIELD_GALLERY_IMAGES = [
